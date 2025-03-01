@@ -1,0 +1,102 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: hsl(185, 41%, 84%);
+    font-family: "Space Mono", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+}
+
+p {
+    margin: 0;
+}
+
+.box {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px 10px 0 0;
+    padding: 30px 20px;
+    width: 370px;
+}
+
+.cyan-bg {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+.dark-cyan-col {
+    color: hsl(184, 14%, 56%);
+}
+
+.strong-cyan-col {
+    color: hsl(172, 67%, 45%);
+}
+
+
+/* remove number spin in the form */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input {
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    text-align: right;
+    padding: 3px 10px;
+}
+
+input[type=number]:focus {
+    outline-color: hsl(172, 67%, 45%);
+}
+
+.input-form {
+    position: relative;
+}
+
+.input-p {
+    position: absolute;
+    left: 15px;
+}
+
+button {
+    width: 100%;
+    border: none;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.tip-btn {
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(0, 0%, 100%);
+}
+
+.selected {
+    background-color: hsl(172, 67%, 45%);
+}
+
+.amount-card {
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.reset-btn {
+    margin-top: 50px;
+}
+
+@media (min-width:998px) {
+    .box {
+        width: 950px
+    }
+}
